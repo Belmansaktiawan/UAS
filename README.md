@@ -1,4 +1,3 @@
-# UAS
 import 'package:flutter/material.dart';
 
 void main() => runApp(App04());
@@ -7,7 +6,7 @@ class App04 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "Data": (context) => BelmanDataTable(),
+        "Data": (context) => MarianaSimaremareDataTable(),
         "Lupa": (context) => LupaPass(),
         "aritmatika": (context) => Aritmatika(),
       },
@@ -108,7 +107,7 @@ class BelmanDataTable extends StatefulWidget {
   _BelmanDataTableState createState() => _BelmanDataTableState();
 }
 
-class _BelmanDataTableState extends State<Belman DataTable> {
+class _BelmanDataTableState extends State<BelmanDataTable> {
   List<DataMahasiswa> barang;
 
   void initState() {
@@ -119,7 +118,7 @@ class _BelmanDataTableState extends State<Belman DataTable> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Belman- 6SIA1'),
+        title: Text('Belman - 6SIA1'),
       ),
       body: ListView(children: <Widget>[
         Center(
@@ -175,9 +174,8 @@ class DataMahasiswa {
       DataMahasiswa(
           id: "Nama", namabarang: "Belman", ),
       DataMahasiswa(
-          id: "Jenis Kelamin", namabarang: "Laki-laki", ),
-      DataMahasiswa(id: "Alamat", namabarang: "Medan johor
- " ),
+          id: "Jenis Kelamin", namabarang: "laki-laki", ),
+      DataMahasiswa(id: "Alamat", namabarang: "Medan Johor", ),
       DataMahasiswa(
           id: "Jurusan", namabarang: "Sistem Informasi",),
 
@@ -231,7 +229,7 @@ final xHarga = TextEditingController();
       autofocus: false,
       controller: xHarga,
       decoration: InputDecoration(
-        hintText: 'Harga', 
+        hintText: 'Harga',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
